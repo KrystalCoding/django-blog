@@ -1,0 +1,1 @@
+web: gunicorn ci-fullstack-blog.wsgi
