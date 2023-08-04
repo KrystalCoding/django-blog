@@ -52,3 +52,10 @@ CMD ["tail", "-f", "/dev/null"]
 
 # Allows proxy to work for react/drf on cloud ide's
 ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
+
+# Use the Gitpod full workspace image as the base image
+FROM gitpod/workspace-full
+
+# Install Heroku CLI
+RUN curl https://cli-assets.heroku.com/install.sh | sh
+
