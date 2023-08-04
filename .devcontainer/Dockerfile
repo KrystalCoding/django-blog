@@ -1,5 +1,12 @@
 FROM ubuntu:22.04
 
+# Use the Gitpod full workspace image as the base image
+FROM gitpod/workspace-full
+
+# Install Heroku CLI
+RUN curl https://cli-assets.heroku.com/install.sh | sh
+
+
 ENV PYTHON_VERSION 3.9.17
 ENV DEBIAN_FRONTEND=noninteractive
 #Set of all dependencies needed for pyenv to work on Ubuntu
@@ -52,10 +59,3 @@ CMD ["tail", "-f", "/dev/null"]
 
 # Allows proxy to work for react/drf on cloud ide's
 ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
-
-# Use the Gitpod full workspace image as the base image
-FROM gitpod/workspace-full
-
-# Install Heroku CLI
-RUN curl https://cli-assets.heroku.com/install.sh | sh
-
