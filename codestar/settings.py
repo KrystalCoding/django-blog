@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-krystalcodin-djangoblog-gpa2vtk80f0.ws-eu102.gitpod.io', 'ci-fullstack-blog.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-krystalcodin-djangoblog-gpa2vtk80f0.ws-eu102.gitpod.io', 'ci-fullstack-blog.herokuapp.com', 'localhost', 'ci-fullstack-blog-c0fe60951097.herokuapp.com']
 
 
 # Application definition
