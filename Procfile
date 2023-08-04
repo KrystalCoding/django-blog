@@ -1,1 +1,1 @@
-web: gunicorn ci-fullstack-blog.wsgi
+web: gunicorn codestar.wsgi
